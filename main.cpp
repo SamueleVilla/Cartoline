@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
     {
         printf("%s\n", argv[3]);
         rewind(fp);
-        while (!feof)
+        while (!feof(fp))
         {
             fscanf(fp, "%s %s %s", c[0].nomeMittente, c[0].nomeDestinatario, c[0].localitaMittente);
             if (strcmp(c[0].nomeDestinatario, argv[3]) == 0)
